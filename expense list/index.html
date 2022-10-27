@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Expense List</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='app.js' defer></script>
+</head>
+<body>
+    <div class="myDiv">
+        <h1>Expense List</h1>
+        <h2>Add A New Item</h2>
+    </div>
+    <div class="myDiv">
+        <p>Name: <input type="text" id="name"></p>
+        <p>Date: <input type="date" id="date" placeholder="dd/mm/yyyy"> Amount: <input type="number" id="item-amount"></p>
+        <button id="add">Add expense</button>
+    </div>
+    <div class="myDiv">
+        <table border="3" width="80%" align="center" class="expense-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <th colspan="2" align="right">Total:</th>
+                <th width="10%" id="total">0$</th>
+                <th width="5%"><button id="clear-list-btn">Clear list!</button></th>
+            </tfoot>
+        </table>
+    </div>
+    <template id="row">
+        <tbody>
+            <th height="30"></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tbody>
+    </template>
+    <template id="delete">
+        <button id="delete-btn">X</button>
+    </template>
+</body>
+</html>
