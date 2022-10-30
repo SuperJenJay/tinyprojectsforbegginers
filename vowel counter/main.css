@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 80%;
+    border: 2px solid blue;
+    border-radius: 5px;
+    height: 2em;
+}
+
+button {
+    width: 10em;
+    height: 3em;
+    background-color: green;
+    color: white;
+    border: 1px thin greenyellow;
+    border-radius: 10px;
+    margin: 20px auto;
+}
