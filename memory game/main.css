@@ -1,0 +1,31 @@
+.board {
+    display: grid;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: blue;
+    border-radius: 20px;
+    column-gap: 35px;
+    grid-template-columns: repeat(5, 18.4vw);
+    grid-template-rows: repeat(4, 12vw);
+}
+
+.item {
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightblue;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+/* img {
+
+} */
+
+.revealed {
+    visibility: visible;
+}
